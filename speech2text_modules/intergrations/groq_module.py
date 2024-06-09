@@ -3,8 +3,9 @@ from config import transcript_params
 
 class GroqTranscriptModule():
     def __init__(self, api_key : str = transcript_params.GROQ_KEY):
-        if not isinstance(api_key,str):
-            raise Exception("API Key must be string")
+        """Initialize Groq Speech to text Module with specific params."""
+        # Validate
+        assert api_key is not None
 
         # Set API Key
         self._client = Groq(api_key = api_key)

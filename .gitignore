@@ -3,3 +3,5 @@
 Actor_01/
 config/__pycache__/
 speech2text_modules/intergrations/__pycache__/
+speech2text_modules/local/__pycache__/
+test.py

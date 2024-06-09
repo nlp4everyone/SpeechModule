@@ -1,0 +1,1 @@
+from text2speech_modules.intergrations.cartesia_module import CartesiaTranscriptModule

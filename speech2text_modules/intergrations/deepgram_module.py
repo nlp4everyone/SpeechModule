@@ -7,9 +7,10 @@ class DeepGramTranscriptModule():
     def __init__(self,
                  model_name :str = "nova-2",
                  api_key : str = transcript_params.DEEPGRAM_KEY):
-        # Validate key
-        if not isinstance(api_key,str):
-            raise Exception("API Key must be string")
+
+        """Initialize Deepgram Speech to text Module with specific params."""
+        # Validate
+        assert api_key is not None
 
         # STEP 1 Create a Deepgram client using the API key
         self._client = DeepgramClient(api_key)

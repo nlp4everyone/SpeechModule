@@ -1,0 +1,5 @@
+.env
+.idea
+Actor_01/
+config/__pycache__/
+speech2text_modules/intergrations/__pycache__/

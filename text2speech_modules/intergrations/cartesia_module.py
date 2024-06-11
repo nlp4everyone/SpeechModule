@@ -28,7 +28,7 @@ class CartesiaT2SModule():
         # Get voice embedding
         self.__voice = self._client.get_voice_embedding(voice_id=voice_id)
 
-    def generate(self, transcript :str):
+    def generate(self, transcript :str) -> None:
         # generate audio
         output = self._client.generate(transcript=transcript, voice=self.__voice, stream=False, **self.__gen_cfg)
 

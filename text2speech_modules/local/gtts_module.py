@@ -12,7 +12,9 @@ class gTTSModule():
         # Initialize path
         os.makedirs(transcript_params.audio_directory, exist_ok=True)
 
-    def generate(self,text :str,file_name: str = "sample.mp3"):
+    def generate(self,text :str,
+                 file_name: str = "sample.mp3") -> None:
+
         # List of audio format
         audio_extensions = ["mp3","wav"]
         audio_extensions = [f".{ext}" for ext in audio_extensions]

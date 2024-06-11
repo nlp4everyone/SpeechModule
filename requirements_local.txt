@@ -1,3 +1,7 @@
 # Pytorch
+StrEnum
+# Speech 2 Text
 faster-whisper
+# Text 2 Speech
 gTTS
+TTS

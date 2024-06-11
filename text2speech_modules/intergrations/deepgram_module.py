@@ -18,7 +18,7 @@ class DeepGramT2SModule():
         # Initialize path
         os.makedirs(transcript_params.audio_directory, exist_ok=True)
 
-    def generate(self, transcript: str, file_name :str = "sample.mp3"):
+    def generate(self, transcript: str, file_name :str = "sample.mp3") -> None:
         # Define speak options
         SPEAK_OPTIONS = {"text": transcript}
         # Saved path

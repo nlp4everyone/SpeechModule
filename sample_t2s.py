@@ -1,10 +1,13 @@
 from text2speech_modules.intergrations import CartesiaT2SModule
-import time
+# from text2speech_modules.local import CoquiTTSModule
 transcript = "Hello, what can i help you?"
 
-# Define Service Speech to Text module
-t2s = CartesiaT2SModule()
+# Define Service Speech to Text intergration module
+module = CartesiaT2SModule()
 # Generate text
-beginTime = time.time()
-t2s.generate(transcript = transcript)
-endTime = time.time() - beginTime
+module.generate(transcript = transcript)
+
+# Define Service Speech to Text intergration module
+# module = CoquiTTSModule()
+# # Generate text
+# module.generate(transcript = transcript)

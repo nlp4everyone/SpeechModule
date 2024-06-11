@@ -1,7 +1,7 @@
 import assemblyai as aai
 from config import transcript_params
 
-class AssemblyTranscriptModule():
+class AssemblyS2TModule():
     def __init__(self, api_key : str = transcript_params.ASSEMBLYAI_KEY):
         """Initialize Assembly Speech to text Module with specific params."""
         # Validate

@@ -1,7 +1,7 @@
 from groq import Groq
 from config import transcript_params
 
-class GroqTranscriptModule():
+class GroqS2TModule():
     def __init__(self, api_key : str = transcript_params.GROQ_KEY):
         """Initialize Groq Speech to text Module with specific params."""
         # Validate

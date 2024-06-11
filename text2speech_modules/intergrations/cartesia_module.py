@@ -4,7 +4,7 @@ from config import transcript_params
 from cartesia.tts import CartesiaTTS
 from typing import Literal
 
-class CartesiaTranscriptModule():
+class CartesiaT2SModule():
     def __init__(self,
                  api_key :str = transcript_params.CARTERSIA_KEY,
                  output_format :Literal["fp32","pcm","fp32_16000","fp32_22050","fp32_44100","pcm_16000","pcm_22050"] = "fp32",

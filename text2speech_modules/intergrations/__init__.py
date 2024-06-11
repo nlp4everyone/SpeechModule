@@ -1,1 +1,2 @@
-from text2speech_modules.intergrations.cartesia_module import CartesiaTranscriptModule
+from text2speech_modules.intergrations.cartesia_module import CartesiaT2SModule
+from text2speech_modules.intergrations.deepgram_module import DeepGramT2SModule

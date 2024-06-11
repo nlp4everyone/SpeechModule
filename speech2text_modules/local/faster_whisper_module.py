@@ -1,7 +1,7 @@
 from faster_whisper import WhisperModel
 from typing import Literal,Union,Optional
 
-class FasterWhisperModule(WhisperModel):
+class FasterWhisperS2TModule(WhisperModel):
     def __init__(self,
                  model_size_or_path: Union[Literal["base","small","medium","large"],str] = 'base',
                  device: Literal["auto","cpu","cuda"] = "auto",

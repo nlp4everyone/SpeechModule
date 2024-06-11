@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
-import os,json
+import os
 load_dotenv()
+audio_directory = "SavedAudio"
 
 # Define params
 ASSEMBLYAI_KEY = os.getenv("ASSEMBLYAI_KEY")

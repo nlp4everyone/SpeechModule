@@ -3,7 +3,7 @@ import os.path
 from deepgram import DeepgramClient , FileSource, PrerecordedOptions
 from config import transcript_params
 
-class DeepGramTranscriptModule():
+class DeepGramS2TModule():
     def __init__(self,
                  model_name :str = "nova-2",
                  api_key : str = transcript_params.DEEPGRAM_KEY):

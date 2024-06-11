@@ -1,3 +1,3 @@
-from speech2text_modules.intergrations.assembly_module import AssemblyTranscriptModule
-from speech2text_modules.intergrations.deepgram_module import DeepGramTranscriptModule
-from speech2text_modules.intergrations.groq_module import GroqTranscriptModule
+from speech2text_modules.intergrations.assembly_module import AssemblyS2TModule
+from speech2text_modules.intergrations.deepgram_module import DeepGramS2TModule
+from speech2text_modules.intergrations.groq_module import GroqS2TModule

@@ -1,1 +1,1 @@
-from speech2text_modules.local.faster_whisper_module import FasterWhisperModule
+from speech2text_modules.local.faster_whisper_module import FasterWhisperS2TModule

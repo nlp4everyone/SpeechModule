@@ -6,3 +6,5 @@ SavedAudio/
 config/__pycache__/
 text2speech_modules/intergrations/__pycache__/
 text2speech_modules/local/__pycache__/
+speech2text_modules/intergrations/__pycache__/
+speech2text_modules/local/__pycache__/

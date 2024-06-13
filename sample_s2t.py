@@ -1,10 +1,11 @@
-from speech2text_modules.intergrations import GroqS2TModule
+from speech2text_modules.intergrations import GroqS2TModule,DeepGramS2TModule
 # from speech2text_modules.local import FasterWhisperS2TModule
 
 path = "audio_samples/sample_1.wav"
 # Define Speech to Text intergration module
-module = GroqS2TModule()
+module = DeepGramS2TModule()
 text = module.transcribe(audio_path = path)
+print(text)
 
 # Define Speech to Text intergration module
 # module = FasterWhisperS2TModule()

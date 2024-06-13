@@ -38,10 +38,9 @@ class DeepGramS2TModule():
 
             # Get response in JSON format
             response = self._client.listen.prerecorded.v("1").transcribe_file(payload, self._options)
-            print(response.to_json(indent=4))
-            return ""
         # Link file
         else:
             response = self._client.listen.prerecorded.v("1").transcribe_url(audio_path, self._options)
-            print(response)
-            return ""
+
+        transcription = response["results"]["channels"][0]["alternatives"][0]["transcript"]
+        return transcription
